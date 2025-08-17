@@ -25,7 +25,25 @@ let updateWindSpeed = (windSpeed) => {
 }
 
 let updateWeatherIcon = (iconSrc) => {
-    weatherIcon.src = `images/${iconSrc[0].main}.png`;
+    if(iconSrc == "Clouds"){
+        weatherIcon.src = `images/clouds.png`;
+    }
+    else if(iconSrc == "Clear"){
+        weatherIcon.src = `images/clear.png`;
+    }
+    else if(iconSrc == "Mist"){
+        weatherIcon.src = `images/mist.png`;
+    }
+    else if(iconSrc == "Rain"){
+        weatherIcon.src = `images/rain.png`;
+    }
+    else if(iconSrc == "Snow"){
+        weatherIcon.src = `images/snow.png`;
+    }
+    else if(iconSrc == "Drizzle"){
+        weatherIcon.src = `images/drizzle.png`;
+    }
+
 }
 
 let updates = (formattedResult) => {
